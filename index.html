@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BookLand</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img alt="" src="IMG/logo.png" />
+        </div>
+        <div class="search">
+            <input id="searchBox" placeholder="جستجوی کتاب..." type="text" />
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="top-icons">
+<div class="icon-box cart-box">
+                <i class="fa-solid fa-cart-shopping">سبد خرید</i>
+            </div>
+        </div>
+    </header>
+    <section class="top-menu">
+        <div class="menu-right">
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>خانه</span>
+            </a>
+            <span class="divider"></span>
+            <a href="#">
+                <i class="fa-solid fa-store"></i>
+                <span>فروشگاه</span>
+            </a>
+            <span class="divider"></span>
+            <a href="#">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>مجله BookLand</span>
+            </a>
+        </div>
+        <div class="menu-left">
+            <a class="support-phone" href="tel:02112345678">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>021-12345678</span>
+            </a>
+            <p>پشتیبانی سریع</p>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slide active">
+            <img src="IMG/cropped_6a450797d5810.webp" />
+        </div>
+        <div class="slide">
+            <img src="IMG/cropped_6a436ae7b465c.webp" />
+        </div>
+        <div class="slide">
+            <img src="IMG/cropped_6a422c28cde4c.webp" />
+        </div>
+    </section>
+    <section class="section-header">
+        <div class="section-title">
+            <i class="fa-solid fa-fire"></i>
+            <h2>عناوین جدید</h2>
+        </div>
+        <button class="section-btn section-view-all" type="button" data-section-view="books"> مشاهده همه </button>
+    </section>
+    <section class="books">
+        <div class="books-row">
+            <div class="book-slider" data-slider="">
+                <div class="book-track">
+                    <div class="book-card">
+                        <img alt="درون آب" src="IMG/book11.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> هیرمند</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3>درون آب</h3>
+                        <p class="publisher">هیرمند</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۸۵٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="موسی و یکتا پرستی" src="IMG/book22.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> نشر نی</p>
+                            <p><span>نویسنده:</span> زیگموند فروید</p>
+                            <p><span>مترجم:</span> صالح نجفی</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۱</p>
+                        </div>
+                        <h3>موسی و یکتا پرستی</h3>
+                        <p class="publisher">نشر نی</p>
+                        <div class="card-bottom">
+                            <span class="price">۲۱۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="فلسفه ژاپنی" src="IMG/book33.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> سیوان</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3>فلسفه ژاپنی</h3>
+                        <p class="publisher">سیوان</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۶۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="نامه ای در باب تساهل" src="IMG/book4.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> نشر نی</p>
+                            <p><span>نویسنده:</span> جان لاک</p>
+                            <p><span>مترجم:</span> شیرزاد گلشاهی کریم</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۰</p>
+                        </div>
+                        <h3>نامه ای در باب تساهل</h3>
+                        <p class="publisher">نشر نی</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۴۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <img alt="بیابان تاتار ها" src="IMG/book21.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> ماهی</p>
+                            <p><span>نویسنده:</span> دینو بوتزاتی</p>
+                            <p><span>مترجم:</span> محسن ابراهیم</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3>بیابان تاتار ها</h3>
+                        <p class="publisher">ماهی</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۹۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="قلب سگی" src="IMG/book222.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> ماهی</p>
+                            <p><span>نویسنده:</span> میخائیل بولگاکف</p>
+                            <p><span>مترجم:</span> آبتین گلکار</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۱</p>
+                        </div>
+                        <h3>قلب سگی</h3>
+                        <p class="publisher">ماهی</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۷۵٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button aria-label="قبلی" class="slider-arrow slider-prev" type="button"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+                <button aria-label="بعدی" class="slider-arrow slider-next" type="button"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+            <div class="books-side-image"><img alt="بنر عناوین جدید" src="IMG/book row.webp" /></div>
+        </div>
+    </section>
+    <section class="middle-banner">
+        <div class="banner-item">
+            <img alt="" src="IMG/دو اسلاید1.webp" />
+        </div>
+        <div class="banner-item">
+            <img alt="" src="IMG/دو اسلاید 2.webp" />
+        </div>
+    </section>
+    <section class="section-header">
+        <div class="section-title">
+            <i class="fa-solid fa-fire"></i>
+            <h2>تجدید چاپ</h2>
+        </div>
+        <button class="section-btn section-view-all" type="button" data-section-view="books"> مشاهده همه </button>
+    </section>
+    <section class="books">
+        <div class="books-row">
+            <div class="book-slider" data-slider="">
+                <div class="book-track">
+
+                    <div class="book-card">
+                        <img alt=" دیاولا " src="IMG/bok21.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> کوله پشتی</p>
+                            <p><span>نویسنده:</span> دینو بوتزاتی</p>
+                            <p><span>مترجم:</span> محسن ابراهیم</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3> دیاولا </h3>
+                        <p class="publisher">کوله پشتی</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۹۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="بر دامنه" src="IMG/bok22.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> ماهی</p>
+                            <p><span>نویسنده:</span> میخائیل بولگاکف</p>
+                            <p><span>مترجم:</span> آبتین گلکار</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۱</p>
+                        </div>
+                        <h3> بردامنه</h3>
+                        <p class="publisher">ماهی</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۷۵٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="از شرم تا بودا" src="IMG/book23.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> بهار سبز</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3>از شرم تا بودا</h3>
+                        <p class="publisher">بهار سبز</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۵۵٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="ملاقاتی برای انسان فانی" src="IMG/book24.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> آموخته</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3>ملاقاتی برای انسان فانی</h3>
+                        <p class="publisher">آموخته</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۳۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt=" جهان های اثیری" src="IMG/bok23.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> هیرمند</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3> جهان های اثیری</h3>
+                        <p class="publisher">هیرمند</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۸۵٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt=" رودین " src="IMG/bok24.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> نشر نی</p>
+                            <p><span>نویسنده:</span> زیگموند فروید</p>
+                            <p><span>مترجم:</span> صالح نجفی</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۱</p>
+                        </div>
+                        <h3>رودین</h3>
+                        <p class="publisher">نشر نی</p>
+                        <div class="card-bottom">
+                            <span class="price">۲۱۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button aria-label="قبلی" class="slider-arrow slider-prev" type="button"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+                <button aria-label="بعدی" class="slider-arrow slider-next" type="button"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+            <div class="books-side-image"><img alt="بنر تجدید چاپ" src="IMG/book row3.webp" /></div>
+        </div>
+    </section>
+    <section class="promo-banner">
+        <img alt="Banner" src="IMG/اسلایدر بزرگ.webp" />
+    </section>
+    <section class="section-header">
+        <div class="section-title">
+            <i class="fa-solid fa-fire"></i>
+            <h2>پرفروش های هفته</h2>
+        </div>
+        <button class="section-btn section-view-all" type="button" data-section-view="books"> مشاهده همه </button>
+    </section>
+    <section class="books">
+        <div class="books-row">
+            <div class="book-slider" data-slider="">
+                <div class="book-track">
+                    <div class="book-card">
+                        <img alt=" نامه نگار" src="IMG/پر فروش1.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> هیرمند</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3> نامه نگار</h3>
+                        <p class="publisher">هیرمند</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۸۵٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt=" سیرسیه" src="IMG/bok31.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> نشر نی</p>
+                            <p><span>نویسنده:</span> زیگموند فروید</p>
+                            <p><span>مترجم:</span> صالح نجفی</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۱</p>
+                        </div>
+                        <h3>سیرسیه</h3>
+                        <p class="publisher">نشر نی</p>
+                        <div class="card-bottom">
+                            <span class="price">۲۱۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="فلسفه ژاپنی" src="IMG/پر فروش3.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> سیوان</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3>سی سال</h3>
+                        <p class="publisher">سیوان</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۶۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="نامه ای به شاعر جوان" src="IMG/bok32.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> نشر نی</p>
+                            <p><span>نویسنده:</span> جان لاک</p>
+                            <p><span>مترجم:</span> شیرزاد گلشاهی کریم</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۰</p>
+                        </div>
+                        <h3>نامه ای به شاعر جوان</h3>
+                        <p class="publisher">نشر نی</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۴۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="  شب اخر" src="IMG/bok33.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> ماهی</p>
+                            <p><span>نویسنده:</span> دینو بوتزاتی</p>
+                            <p><span>مترجم:</span> محسن ابراهیم</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3>شب اخر </h3>
+                        <p class="publisher">ماهی</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۹۰٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <img alt="از شرم تا بودا" src="IMG/bok34.webp" />
+                        <div class="book-info">
+                            <p><span>ناشر:</span> بهار سبز</p>
+                            <p><span>نویسنده:</span> ناشناس</p>
+                            <p><span>مترجم:</span> ---</p>
+                            <p><span>سال چاپ:</span> ۱۴۰۲</p>
+                        </div>
+                        <h3> سر دشت سرزمین میانه </h3>
+                        <p class="publisher">بهار سبز</p>
+                        <div class="card-bottom">
+                            <span class="price">۱۵۵٬۰۰۰ تومان</span>
+                            <div class="card-actions">
+<button class="icon-btn cart-btn" title="افزودن به سبد خرید"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button aria-label="قبلی" class="slider-arrow slider-prev" type="button"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+                <button aria-label="بعدی" class="slider-arrow slider-next" type="button"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+            <div class="books-side-image"><img alt="بنر پرفروش های هفته" src="IMG/book row22.webp" /></div>
+        </div>
+    </section>
+    <section class="middle-banner">
+        <div class="banner-item">
+            <img alt="" src="IMG/1از4.webp" />
+        </div>
+        <div class="banner-item">
+            <img alt="" src="IMG/2از4.webp" />
+        </div>
+        <div class="banner-item">
+            <img alt="" src="IMG/3از4.webp" />
+        </div>
+        <div class="banner-item">
+            <img alt="" src="IMG/4از4.webp" />
+        </div>
+    </section>
+    <section class="section-header" id="jmag-section-header">
+        <div class="section-title">
+            <i class="fa-solid fa-fire"></i>
+            <h2>جی مگ</h2>
+        </div>
+        <a class="section-btn" href="#">
+
+            مشاهده همه
+
+        </a>
+    </section>
+    <section class="books">
+        <div class="jmag-slider" data-jmag-slider="">
+            <div class="jmag-track">
+                <div class="jmag-card">
+                    <img alt="درون آب" src="IMG/bok41.webp" />
+                    <h3> خون و شن </h3>
+                    <span class="jmag-divider"></span>
+                    <p class="jmag-description">داستانی رازآلود و پرتعلیق که با ناپدید شدن یک زن، رازهای پنهان گذشته را
+                        آرام‌آرام آشکار می‌کند.</p>
+                    <a class="jmag-more" href="#">بیشتر بخوانید <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="jmag-card">
+                    <img alt="موسی و یکتا پرستی" src="IMG/bok42.webp" />
+                    <h3> بیوگرافی امانوئل بوو</h3>
+                    <span class="jmag-divider"></span>
+                    <p class="jmag-description">اثری درباره نگاه فروید به پیدایش باورهای دینی و رابطه میان روان انسان،
+                        تاریخ و شکل‌گیری یکتاپرستی.</p>
+                    <a class="jmag-more" href="#">بیشتر بخوانید <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="jmag-card">
+                    <img alt="فلسفه ژاپنی" src="IMG/bok43.webp" />
+                    <h3>ارزان خور ها </h3>
+                    <span class="jmag-divider"></span>
+                    <p class="jmag-description">مروری کوتاه بر ایده‌های فلسفی ژاپن و مفاهیمی که نگاه انسان به زندگی،
+                        آرامش و خودشناسی را تغییر می‌دهند.</p>
+                    <a class="jmag-more" href="#">بیشتر بخوانید <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="jmag-card">
+                    <img alt="نامه ای در باب تساهل" src="IMG/bok44.webp" />
+                    <h3>شبح سرخ </h3>
+                    <span class="jmag-divider"></span>
+                    <p class="jmag-description">متنی کلاسیک درباره آزادی اندیشه و اهمیت مدارا با باورهای متفاوت در جامعه
+                        و زندگی اجتماعی.</p>
+                    <a class="jmag-more" href="#">بیشتر بخوانید <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="jmag-card">
+                    <img alt="بیابان تاتار ها" src="IMG/bok45.webp" />
+                    <h3> از کتاب تا زیست</h3>
+                    <span class="jmag-divider"></span>
+                    <p class="jmag-description">رمانی تأمل‌برانگیز درباره انتظار، گذر عمر و انسانی که سال‌های زندگی خود
+                        را چشم‌به‌راه یک اتفاق بزرگ می‌ماند.</p>
+                    <a class="jmag-more" href="#">بیشتر بخوانید <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="jmag-card">
+                    <img alt="قلب سگی" src="IMG/bok46.webp" />
+                    <h3>بر بر نجیب</h3>
+                    <span class="jmag-divider"></span>
+                    <p class="jmag-description">داستانی طنزآمیز و تلخ درباره آزمایشی عجیب که مرزهای اخلاق، علم و ماهیت
+                        انسان را به چالش می‌کشد.</p>
+                    <a class="jmag-more" href="#">بیشتر بخوانید <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+            <button aria-label="قبلی" class="slider-arrow slider-prev" type="button"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+            <button aria-label="بعدی" class="slider-arrow slider-next" type="button"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+    <section class="middle-banner">
+        <div class="banner-item">
+            <img alt="" src="IMG/دو اسلاید 2و2.webp" />
+        </div>
+        <div class="banner-item">
+            <img alt="" src="IMG/دو اسلاید 1و1.webp" />
+        </div>
+    </section>
+    <section class="section-bottom">
+        <div class="section-title">
+            <i class="fa-solid fa-fire"></i>
+            <h2>بازدید های اخیر</h2>
+        </div>
+    </section>
+    <section class="books">
+        <div class="recent-container" id="recentContainer">
+            <div class="recent-card">
+                <img src="IMG/بازدید 1.webp" />
+                <h3>قطار نیمه شب</h3>
+                <p>گویا</p>
+                <button>مشاهده</button>
+            </div>
+            <div class="recent-card">
+                <img src="IMG/بازدید3.webp" />
+                <h3>موسیقی کلاسیک</h3>
+                <p>اوند دانش</p>
+                <button>مشاهده</button>
+            </div>
+            <div class="recent-card">
+                <img src="IMG/بازدید2.webp" />
+                <h3>فابل</h3>
+                <p>ادریان یانگ</p>
+                <button>مشاهده</button>
+            </div>
+            <div class="recent-card">
+                <img src="IMG/بازدید4.webp" />
+                <h3> صفت های بایسته رهبر</h3>
+                <p>اندیشه بیگی</p>
+                <button>مشاهده</button>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <h2>عضویت در خبرنامه</h2>
+        <p>از جدیدترین کتاب ها باخبر شوید.</p>
+        <input placeholder="ایمیل" type="email" />
+        <button>ثبت</button>
+    </section>
+    <footer>
+        <section class="footer-top">
+            <div class="footer-box">
+                <div class="footer-column">
+                    <h3>نقشه سایت</h3>
+                    <a href="#">تماس با ما</a>
+                    <a href="#">درباره ما</a>
+                    <a href="#">همکاری با ما</a>
+                    <a href="#">خدمات به مشتریان</a>
+                    <a href="#">فرم استخدام</a>
+                </div>
+                <div class="footer-column">
+                    <h3>ترین ها</h3>
+                    <a href="#">جدیدترین ها</a>
+                    <a href="#">جدیدترین تجدید چاپ ها</a>
+                    <a href="#">پرفروش ترین ها</a>
+                </div>
+                <div class="footer-column">
+                    <h3>راهنمای سایت</h3>
+                    <a href="#">پشتیبانی سایت</a>
+                    <a href="#">حساب کاربری من</a>
+                    <a href="#">لیست علاقه مندی ها</a>
+                </div>
+            </div>
+            <div class="contact-box1">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            تهران، خیابان دماوند، خیابان خورشید، پلاک ۳۱
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>02191006010</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@bookland.ir</span>
+                    </div>
+                </div>
+                <div class="contact-logo">
+                    <img alt="نماد اعتماد الکترونیکی" src="IMG/e namad 2.png" />
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
